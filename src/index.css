@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.manage-empolyee{
+    background: rgb(235,234,241);
+background: linear-gradient(90deg, rgba(235,234,241,1) 62%, rgba(2,0,36,1) 100%);
+}
+
+.all-employee{
+    background: rgb(136,135,142);
+    background: linear-gradient(90deg, rgba(136,135,142,1) 2%, rgba(136,135,142,1) 4%, rgba(142,141,148,1) 6%, rgba(235,234,241,1) 19%);
+}
+
+.menu-item {
+    padding: 5px;
+    font-family: serif;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    color: darkgray; /* Change color on hover */
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+
