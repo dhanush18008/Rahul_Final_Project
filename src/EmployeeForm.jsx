@@ -17,8 +17,25 @@ function EmployeeForm({ onSubmit }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Call the onSubmit function passed from the parent component
+
+    // Check if any required field is empty
+    if (!formData.firstName.trim() || !formData.secondName.trim() || !formData.dob.trim() || !formData.department.trim()) {
+      window.alert('First Name, Second Name, Date of Birth, and Department are required fields.');
+      return; // Exit early if any field is empty
+    }
+
+    // All fields are filled, proceed with form submission
     onSubmit(formData);
+
+    // Clear form data
+    setFormData({
+      firstName: '',
+      secondName: '',
+      dob: '',
+      department: '',
+      managerId: '',
+      skills: [],
+    });
   };
 
   return (
@@ -28,37 +45,36 @@ function EmployeeForm({ onSubmit }) {
         name="firstName"
         value={formData.firstName}
         onChange={handleChange}
-        placeholder=" First Name"
+        placeholder="Enter your first name"
       />
       <input
         type="text"
         name="secondName"
         value={formData.secondName}
         onChange={handleChange}
-        placeholder=" Second Name"
+        placeholder="Enter your second name"
       />
       <input
         type="text"
         name="dob"
         value={formData.dob}
         onChange={handleChange}
-        placeholder=" Date of Birth (YYYY-MM-DD)"
+        placeholder="Enter your date of birth (YYYY-MM-DD)"
       />
       <input
         type="text"
         name="department"
         value={formData.department}
         onChange={handleChange}
-        placeholder=" Department"
+        placeholder="Enter your department"
       />
       <input
         type="text"
         name="managerId"
         value={formData.managerId}
         onChange={handleChange}
-        placeholder=" Manager ID"
+        placeholder="Enter your manager ID"
       />
-
       <button type="submit" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4'>Submit</button>
     </form>
   );

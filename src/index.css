@@ -7,10 +7,6 @@
 background: linear-gradient(90deg, rgba(235,234,241,1) 62%, rgba(2,0,36,1) 100%);
 }
 
-.all-employee{
-    background: rgb(136,135,142);
-    background: linear-gradient(90deg, rgba(136,135,142,1) 2%, rgba(136,135,142,1) 4%, rgba(142,141,148,1) 6%, rgba(235,234,241,1) 19%);
-}
 
 .menu-item {
     padding: 5px;
@@ -23,5 +19,24 @@ background: linear-gradient(90deg, rgba(235,234,241,1) 62%, rgba(2,0,36,1) 100%)
     color: darkgray; /* Change color on hover */
     transform: scale(1.1); /* Increase size on hover */
 }
+
+/* styles.css */
+
+.employee-card {
+    width: 320px; /* Initial width */
+    height: 160px; /* Initial height */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s; /* Apply transition effect to width, height, and box-shadow */
+  }
+  
+  .employee-card:hover {
+    width: 340px; /* Increase width on hover */
+    height: 180px; /* Increase height on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for depth effect */
+  }
+  
 
 

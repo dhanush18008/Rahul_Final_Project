@@ -38,12 +38,7 @@ function ManageSkills() {
     return (
     <div className='bg-slate-300 h-screen'>
         <h1 className='text-7xl font-serif ml-14 py-11'>Welcome User!!</h1>
-        <p className='text-2xl text-center py-3'>Here you can manage skills of an Employee by following 3 simple steps:</p>
-        <ol className='text-center '>
-            <li className=' py-3'>Enter EmployeeID</li>
-            <li className='mr-14 py-3'>Enter Skill</li>
-            <li className='mr-3 py-2'>Enter Operation</li>
-        </ol>
+        <p className='text-2xl text-center py-3'>Here you can manage skills of an Employee </p>
         <div className='flex flex-col flex-grow ml-96 mr-96 py-7 gap-7'>
         <input
         className='content-center'
