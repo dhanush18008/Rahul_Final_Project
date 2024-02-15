@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.font-teko{
+    font-family: 'Teko';
+}
+
+.font-lato{
+    font-family: 'Lato';
+    font-style: italic;
+}
+
+.font-roboto{
+    font-family: 'Roboto Condensed';
+}
+
+.font-crimson{
+    font-family: 'Crimson Text';
+}
+
+.navbar-image {
+    width: auto; /* Adjust the width as needed */
+    height: 10rem; /* Maintain aspect ratio */
+     /* Add some margin to separate the image from the navigation links */
+}
+
+.background-image {
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F011%2F545%2F792%2Fsmall%2Fabstract-luxury-glowing-lines-curved-overlapping-on-dark-blue-background-free-vector.jpg&tbnid=B_kw349y9dtMjM&vet=12ahUKEwif2v-D6ayEAxU4pmMGHReUCHwQMyhGegUIARD4AQ..i&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fdark-blue-background&docid=xVrk1su7k9146M&w=424&h=200&q=bg%20image%20dark%20blue&ved=2ahUKEwif2v-D6ayEAxU4pmMGHReUCHwQMyhGegUIARD4AQ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }

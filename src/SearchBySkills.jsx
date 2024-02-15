@@ -42,8 +42,8 @@ function SearchBySkills() {
   
     return (
     <div className=' manage-empolyee h-screen'>
-      <h1 className='text-5xl font-serif ml-20 py-5 '>Welcome User!!</h1>
-      <p className='font-serif text-center mr-44 py-3'>Search the Employees according to your needs!</p>
+      <h1 className='text-7xl font-lato ml-20 py-5 '>Welcome User!!</h1>
+      <p className='font-crimson text-center mr-44 py-3 text-indigo-800 text-2xl font-semibold'>Search the Employees according to your needs!</p>
         <form onSubmit={handleSubmit} className="ml-96">
       <input
         type="text"
@@ -61,7 +61,7 @@ function SearchBySkills() {
         <option value="ALL">All</option>
         <option value="REGEX">Regex</option>
       </select>
-      <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-double focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white">
+      <button type="submit" className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-900 focus:outline-double focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white">
         Search
       </button>
     </form>
@@ -73,7 +73,7 @@ function SearchBySkills() {
       </div>
     </div>
     <Link to='/'>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-5 ">
+      <button className="bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded ml-5 ">
         Back
       </button>
       </Link>

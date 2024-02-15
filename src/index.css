@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .manage-empolyee{
-    background: rgb(235,234,241);
-background: linear-gradient(90deg, rgba(235,234,241,1) 62%, rgba(2,0,36,1) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 63%, rgba(216,211,242,1) 70%, rgba(80,53,246,1) 96%);
 }
 
 
 .menu-item {
     padding: 5px;
-    font-family: serif;
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
+    color: white;
 }
 
 .menu-item:hover {

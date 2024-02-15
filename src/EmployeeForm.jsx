@@ -45,37 +45,37 @@ function EmployeeForm({ onSubmit }) {
         name="firstName"
         value={formData.firstName}
         onChange={handleChange}
-        placeholder="Enter your first name"
+        placeholder=" Enter your first name"
       />
       <input
         type="text"
         name="secondName"
         value={formData.secondName}
         onChange={handleChange}
-        placeholder="Enter your second name"
+        placeholder=" Enter your second name"
       />
       <input
         type="text"
         name="dob"
         value={formData.dob}
         onChange={handleChange}
-        placeholder="Enter your DoB (YYYY-MM-DD)"
+        placeholder=" Enter your DoB (YYYY-MM-DD)"
       />
       <input
         type="text"
         name="department"
         value={formData.department}
         onChange={handleChange}
-        placeholder="Enter your department"
+        placeholder=" Enter your department"
       />
       <input
         type="text"
         name="managerId"
         value={formData.managerId}
         onChange={handleChange}
-        placeholder="Enter your manager ID"
+        placeholder=" Enter your manager ID"
       />
-      <button type="submit" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4'>Submit</button>
+      <button type="submit" className='bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded mt-4'>Submit</button>
     </form>
   );
 }

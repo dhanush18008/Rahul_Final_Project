@@ -38,8 +38,8 @@ function ManageEmployee() {
 
   return (
     <div className='manage-empolyee h-screen'>
-        <h1 className='text-7xl font-serif ml-14 py-11 '>Welcome User!!</h1>
-        <p className='font-serif text-2xl ml-16'>To Manage employees select the desired option and give the required details to proceed</p>
+        <h1 className='text-7xl font-teko ml-14 py-11 '>Welcome User!!</h1>
+        <p className='font-lato text-xl ml-16 text-indigo-900'>To Manage employees select the desired option and give the required details to proceed</p>
          <div className="mt-4">
         <select
           value={selectedOption}
@@ -62,7 +62,7 @@ function ManageEmployee() {
         <EmployeeForm onSubmit={handleSubmit} />
       </div>
       <Link to='/'>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-5 ">
+      <button className="bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded ml-5 ">
         Back
       </button>
       </Link>

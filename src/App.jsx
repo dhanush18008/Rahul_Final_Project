@@ -1,17 +1,17 @@
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import './App.css'
-import AllEmployees from './AllEmployees';
 import SearchBySkills from './SearchBySkills';
 import ManageEmployee from './ManageEmployee';
 import ManageSkills from './ManageSkills';
 import NotFound from './NotFound';
+import FrontPage from './FrontPage';
 
 function App() {
  
   const router=createBrowserRouter([
     {
       path:'/',
-      element:<AllEmployees/>,
+      element:<FrontPage/>,
       errorElement:<NotFound/>
     },
     {
