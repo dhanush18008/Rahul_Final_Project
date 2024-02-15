@@ -59,7 +59,7 @@ function EmployeeForm({ onSubmit }) {
         name="dob"
         value={formData.dob}
         onChange={handleChange}
-        placeholder="Enter your date of birth (YYYY-MM-DD)"
+        placeholder="Enter your DoB (YYYY-MM-DD)"
       />
       <input
         type="text"
