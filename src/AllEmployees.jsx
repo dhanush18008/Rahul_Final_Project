@@ -3,6 +3,7 @@ import axios from "axios";
 import EmployeeCard from "./EmployeeCard";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
+import LastPage from "./LastPage";
 
 function AllEmployees() {
   const [employees, setEmployees] = useState([]);
@@ -43,7 +44,7 @@ function AllEmployees() {
       
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap gap-7 justify-center">
-          {employees.map((employee) => (
+          {maxPage===true?<LastPage/>:employees.map((employee) => (
             <EmployeeCard key={employee.id} employee={employee} />
           ))}
         </div>

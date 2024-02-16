@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .font-teko{
     font-family: 'Teko';
@@ -20,6 +21,10 @@
     font-family: 'Crimson Text';
 }
 
+.font-marker{
+    font-family: 'Permanent Marker';
+}
+
 .navbar-image {
     width: auto; /* Adjust the width as needed */
     height: 10rem; /* Maintain aspect ratio */
@@ -32,4 +37,8 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+  }
+
+  .tilted-heading {
+    transform: rotate(-10deg);
   }
