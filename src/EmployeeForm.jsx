@@ -10,6 +10,7 @@ function EmployeeForm({ onSubmit, selectedOption }) {
     skills: [],
   });
 
+  console.log(selectedOption);
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
@@ -19,7 +20,7 @@ function EmployeeForm({ onSubmit, selectedOption }) {
     event.preventDefault();
 
     // Check if any required field is empty
-    if ((!formData.firstName.trim() || !formData.secondName.trim() || !formData.dob.trim() || !formData.department.trim())&& selectedOption==='removeEmployee') {
+    if ((!formData.firstName.trim() || !formData.secondName.trim() || !formData.dob.trim() || !formData.department.trim())&& selectedOption==='addEmployee') {
       window.alert('First Name, Second Name, Date of Birth, and Department are required fields.');
       return; // Exit early if any field is empty
     }

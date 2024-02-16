@@ -7,7 +7,7 @@ import './index.css';
 function ManageEmployee() {
     const [selectedOption, setSelectedOption] = useState('');
     const [employeeId, setEmployeeId] = useState('');
-    const [selectedOptionForForm, setSelectedOptionForForm] = useState(''); // State variable to pass selected option to EmployeeForm
+     // State variable to pass selected option to EmployeeForm
   
     const handleOptionChange = (event) => {
       setSelectedOption(event.target.value);
@@ -38,13 +38,13 @@ function ManageEmployee() {
     // Function to handle submit in EmployeeForm
     const handleFormSubmit = (formData) => {
       // Pass the selected option to EmployeeForm
-      setSelectedOptionForForm(selectedOption);
+
       // Call the parent component's handleSubmit function
       handleSubmit(formData);
     };
   
     return (
-      <div className='manage-employee h-screen'>
+      <div className='manage-empolyee h-screen'>
           <h1 className='text-7xl font-teko ml-14 py-11 '>Welcome User!!</h1>
           <p className='font-lato text-xl ml-16 text-indigo-900'>To Manage employees select the desired option and give the required details to proceed</p>
            <div className="mt-4">
@@ -67,7 +67,7 @@ function ManageEmployee() {
             />
           )}
           {/* Pass the selected option to EmployeeForm */}
-          <EmployeeForm selectedOption={selectedOptionForForm} onSubmit={handleFormSubmit} />
+          <EmployeeForm selectedOption={selectedOption} onSubmit={handleFormSubmit} />
         </div>
         <Link to='/'>
         <button className="bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded ml-5 ">
