@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function EmployeeForm({ onSubmit }) {
+function EmployeeForm({ onSubmit, selectedOption }) {
   const [formData, setFormData] = useState({
     firstName: '',
     secondName: '',
@@ -19,13 +19,13 @@ function EmployeeForm({ onSubmit }) {
     event.preventDefault();
 
     // Check if any required field is empty
-    if (!formData.firstName.trim() || !formData.secondName.trim() || !formData.dob.trim() || !formData.department.trim()) {
+    if ((!formData.firstName.trim() || !formData.secondName.trim() || !formData.dob.trim() || !formData.department.trim())&& selectedOption==='removeEmployee') {
       window.alert('First Name, Second Name, Date of Birth, and Department are required fields.');
       return; // Exit early if any field is empty
     }
 
     // All fields are filled, proceed with form submission
-    onSubmit(formData);
+    onSubmit({ ...formData, selectedOption });
 
     // Clear form data
     setFormData({
@@ -38,8 +38,9 @@ function EmployeeForm({ onSubmit }) {
     });
   };
 
+
   return (
-    <form onSubmit={handleSubmit} className='py-10 flex flex-col gap-4 w-60 ml-44'>
+    <form onSubmit={handleSubmit} className='py-10 flex flex-col gap-4 w-60 ml-44' >
       <input
         type="text"
         name="firstName"
