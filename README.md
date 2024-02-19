@@ -1,2 +1,2 @@
 # Rahul_Final_Project
-Final project for internship
+UI of Final project for internship at PayTabs
