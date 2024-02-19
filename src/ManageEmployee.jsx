@@ -44,7 +44,7 @@ function ManageEmployee() {
     };
   
     return (
-      <div className='manage-empolyee h-screen'>
+      <div className='manage-empolyee h-screen w-full'>
           <h1 className='text-7xl font-teko ml-14 py-11 '>Welcome User!!</h1>
           <p className='font-lato text-xl ml-16 text-indigo-900'>To Manage employees select the desired option and give the required details to proceed</p>
            <div className="mt-4">

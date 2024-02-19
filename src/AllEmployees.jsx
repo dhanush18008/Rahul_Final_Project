@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import EmployeeCard from "./EmployeeCard";
-import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 import LastPage from "./LastPage";
 

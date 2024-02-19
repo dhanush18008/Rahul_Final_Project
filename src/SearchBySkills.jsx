@@ -41,9 +41,9 @@ function SearchBySkills() {
   
   
     return (
-    <div className=' manage-empolyee h-screen'>
+    <div className=' manage-empolyee h-screen w-full'>
       <h1 className='text-7xl font-lato ml-20 py-5 '>Welcome User!!</h1>
-      <p className='font-crimson text-center mr-44 py-3 text-indigo-800 text-2xl font-semibold'>Search the Employees Skills according to your needs!</p>
+      <p className='font-crimson text-center ml-24 py-3 text-indigo-800 text-2xl font-semibold'>Search the Employees Skills according to your needs!</p>
         <form onSubmit={handleSubmit} className="ml-96">
       <input
         type="text"
