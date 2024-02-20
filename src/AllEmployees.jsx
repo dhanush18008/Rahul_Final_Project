@@ -37,7 +37,7 @@ function AllEmployees() {
 
   return (
     <div className="text-black">
-      <Link to="/">
+      <Link to="/home">
         <h1 className="ml-9 text-4xl font-lato py-1">ALL Employees</h1>
       </Link>
       

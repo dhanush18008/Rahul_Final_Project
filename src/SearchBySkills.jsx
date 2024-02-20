@@ -72,7 +72,7 @@ function SearchBySkills() {
         ))}
       </div>
     </div>
-    <Link to='/'>
+    <Link to='/home'>
       <button className="bg-indigo-600 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded ml-5 ">
         Back
       </button>

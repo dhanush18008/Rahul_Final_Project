@@ -6,28 +6,34 @@ import ManageSkills from './ManageSkills';
 import NotFound from './NotFound';
 import FrontPage from './FrontPage';
 import AllEmployees from './AllEmployees';
+import LandingPage from './LandingPage';
 
 function App() {
  
   const router = createBrowserRouter([
     {
-      path: '/',
+    path:'/',
+    element:<LandingPage/>,
+    },
+    {
+
+      path: '/home',
       element: <FrontPage />,
       errorElement: <NotFound />,
       children: [{
-          path:'/',
+          path:'/home',
           element:<AllEmployees/>        
         },
         {
-          path: '/search-by-skills',
+          path: '/home/search-by-skills',
           element: <SearchBySkills />
         },
         {
-          path: '/manageEmployee',
+          path: '/home/manageEmployee',
           element: <ManageEmployee />
         },
         {
-          path: '/manageSkills',
+          path: '/home/manageSkills',
           element: <ManageSkills />
         }
       ]

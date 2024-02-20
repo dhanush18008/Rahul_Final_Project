@@ -73,7 +73,7 @@ function ManageSkills() {
       {/* {error && <p className="text-red-500">{error}</p>} */}
       
       </div>
-      <Link to='/'>
+      <Link to='/home'>
       <button className="bg-indigo-600 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded mt-28 ml-3">
         Back
       </button>
